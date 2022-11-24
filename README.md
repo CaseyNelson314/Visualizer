@@ -1,55 +1,98 @@
 # Visualizer
 
+ロボットの発射機構操縦、現在地表示アプリ
+
 ## 🤔 Description
 
 四国地区、全国高専ロボコンで使用したロボットの操縦アプリです
 
-目標着地点の指定、発射機構の角度計算等を行い、ロボットへ送信します
+![image](https://user-images.githubusercontent.com/91818705/203841200-730035a2-636a-48d4-a17b-8a4aa23b5367.png)
 
-![image](https://user-images.githubusercontent.com/91818705/201993305-4e0fefde-cc37-4ee9-a389-7b74a643f83b.png)
+## ⭳ Download
 
-## Install
+Windows x64 用です
 
 [Download]()
 
-```sh
-git clone https://github.com/CaseyNelson314/Visualizer.git
-cd Visualizer
-start ./Visualizer/App/Visualizer.exe
-```
+> ```sh
+> ## clone && execute
+> git clone https://github.com/CaseyNelson314/Visualizer.git
+> cd Visualizer
+> start ./Visualizer/App/Visualizer.exe
+> ```
 
 ## 💬 Usage
 
-## 📗 内部処理
+-   スタートゾーン切り替え
+
+    スタートゾーンをタッチすることで切り替えられます
+
+-   着陸点選択
+
+    着陸点(スポット、ベース、滑走路)をタッチすることで選択できます。最大 2 箇所まで選択できます
+
+-   発射機構切り替え
+
+    ロボットをタッチすることで使用する発射機構の切り替えができます
+
+-   キー操作(デバッグ用)
+
+    ロボットをキーボードで動かします。WASD で平行移動、QE で旋回できます
+
+-   シリアル
+
+    右上の COM ポートリストからポートを選択後、OPEN ボタンを押すことで通信を開始します
+
+    Bluetooth 経由の COM ポートを OPEN しようとした場合アプリが落ちる場合があります
+
+-   浮動コントローラー
+
+    ロボットへ発射機構の微調整、発射、ゼロ点取り、射出ローラー回転切替、再装填の指示を送信します
+
+-   その他
+
+    F キーを押すことでフルスクリーンモードに切り替えられます
+
+    F1 キーを押すことで OpenSiv3D が使用しているサードパーティ・ソフトウェアのライセンス情報を表示します
+
+## 📗 処理概要
 
 -   通信
 
-    腕に装着するモニターからロボットのマスターまでの通信の流れは以下のようになっています
+    PC とロボット間の通信の流れは以下のようになっています
 
     ```mermaid
     flowchart LR
     	subgraph ロボット
-    	master[master/teensy4.0] <--I2c--> toMaster[teensy4.0,im920]
+    	master[master/teensy4.0] <--I2c--> masterForwarding[teensy4.0] <--UART--> masterIm920[im920]
     	end
     	subgraph 操縦者
-    	toMaster <-.920Mhz.-> toPc[im920,teensy4.0] <--UART--> pc <--HDMI--> monitor
+    	masterIm920 <-.920Mhz.-> toPc[im920] <--UART--> pcForwarding[teensy4.0] <--UART--> pc
     	end
     ```
 
 -   GUI
 
-    GUIプログラム は OpenSiv3D を使い、C++で記述しています。
+    プログラムは OpenSiv3D を使い、C++で記述しました
 
-    練習時に誰の PC でも使用できるよう、画面のリサイズに対応する必要がありました。OpenSiv3D では図形の描画を座標を指定して行います。そのためリサイズ時でも座標を気にせず描画できる VirtualElement クラスを作成しました。
+    使わせていただいた OpenSiv3D のリンクです。とても使いやすかったです!
 
-## 📖License
+    https://github.com/Siv3D/OpenSiv3D
+
+    https://zenn.dev/reputeless/books/siv3d-documentation/viewer/introduction
+
+## Author
+
+[CaseyNelson314](https://github.com/CaseyNelson314)
+
+## 📖 License
 
 MIT License
 
-アプリ起動時に F1 キーを押すことで OpenSiv3D が使用しているサードパーティ・ソフトウェアのライセンス情報を表示します
-
 ## 💻 開発環境
 
-Microsoft Visual Studio Community 2022 Version 17.3.1
-
-OpenSiv3D v0.6.5
+|     |                                                       |
+| --- | ----------------------------------------------------- |
+| OS  | Windows 11 Home                                       |
+| IDE | Microsoft Visual Studio Community 2022 Version 17.3.1 |
+| SDK | OpenSiv3D v0.6.5                                      |
