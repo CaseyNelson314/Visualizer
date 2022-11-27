@@ -409,7 +409,6 @@ gmon.out
 /Siv3D/lib/macOS/siv3d/libSiv3D.a
 /Siv3D/lib/*/siv3d.a
 **/App/*.app
-**/App/*.exe
 **/App/Siv3DTest
 *.jppmdl
 
