@@ -6,7 +6,7 @@
 
 ロボットに搭載されている左右の発射機構の操縦アプリです。
 
-2022年度 四国地区、全国高専ロボコンで使用しました。
+2022 年度 四国地区、全国高専ロボコンで使用しました。
 
 ![image](https://user-images.githubusercontent.com/91818705/203841200-730035a2-636a-48d4-a17b-8a4aa23b5367.png)
 
@@ -14,13 +14,13 @@
 
 Windows x64 のみ対応しています。
 
-[Download]()
+[ダウンロード]()
+
+git でのダウンロード
 
 > ```sh
-> ## clone && execute
 > git clone https://github.com/CaseyNelson314/Visualizer.git
-> cd Visualizer
-> start ./Visualizer/App/Visualizer.exe
+> start ./Visualizer/Visualizer/App/Visualizer.exe
 > ```
 
 ## 💬 Usage
