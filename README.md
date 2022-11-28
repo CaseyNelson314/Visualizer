@@ -14,7 +14,7 @@
 
 Windows x64 のみ対応しています。
 
-[ダウンロード](https://github.com/CaseyNelson314/Visualizer/releases/download/untagged-07cfa2e06f4fabe2f858/Visualizer.exe)
+[ダウンロード](https://github.com/CaseyNelson314/Visualizer/releases/download/untagged-5dc1c6d2aa2b5dd536d9/Visualizer.exe)
 
 git でのダウンロード
 
