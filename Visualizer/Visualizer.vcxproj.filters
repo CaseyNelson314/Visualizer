@@ -128,34 +128,37 @@
     <Filter Include="Resource Files\engine\font\min">
       <UniqueIdentifier>{1b103960-f11a-4515-b4f1-f59333ce00d9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Field">
-      <UniqueIdentifier>{10f5a945-1af4-4e1b-987e-d8c4a01b3509}</UniqueIdentifier>
+    <Filter Include="ElementManeger">
+      <UniqueIdentifier>{68eef685-35b0-4d74-bb44-f48d16ad8f35}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ElementManege">
-      <UniqueIdentifier>{9aa75d44-ee26-4d4d-8355-b98ec2fe744b}</UniqueIdentifier>
+    <Filter Include="Field">
+      <UniqueIdentifier>{2f916edf-2901-45f2-8234-a7387b840192}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
-      <UniqueIdentifier>{bae91899-4dfc-494c-82ae-d0850c840de9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Stdafx">
-      <UniqueIdentifier>{c5aa93be-7123-4f1d-9618-7ecee27102ca}</UniqueIdentifier>
+      <UniqueIdentifier>{06abfe25-990a-4488-bff8-9b25ad1e4493}</UniqueIdentifier>
     </Filter>
     <Filter Include="Ui">
-      <UniqueIdentifier>{c8b5bccf-7166-465a-916c-b5f2719f9d21}</UniqueIdentifier>
+      <UniqueIdentifier>{2d62cc73-de39-4296-826f-21e6cc167b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stdafx">
+      <UniqueIdentifier>{7c636779-2294-4431-8e9a-42f91bde6594}</UniqueIdentifier>
     </Filter>
     <Filter Include="Serial">
-      <UniqueIdentifier>{3660dc39-27cd-4d52-9c18-7254a54177d8}</UniqueIdentifier>
+      <UniqueIdentifier>{89a962e5-6e8b-47a1-a84d-b6038638f0c8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ElementManege.cpp">
-      <Filter>ElementManege</Filter>
-    </ClCompile>
     <ClCompile Include="VirtualElement.cpp">
-      <Filter>ElementManege</Filter>
+      <Filter>ElementManeger</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Stdafx</Filter>
+    <ClCompile Include="ElementManege.cpp">
+      <Filter>ElementManeger</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Robot.cpp">
+      <Filter>Field</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Main</Filter>
@@ -163,11 +166,8 @@
     <ClCompile Include="Visualizer.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="Field.cpp">
-      <Filter>Field</Filter>
-    </ClCompile>
-    <ClCompile Include="Robot.cpp">
-      <Filter>Field</Filter>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Stdafx</Filter>
     </ClCompile>
     <ClCompile Include="SerialManeger.cpp">
       <Filter>Serial</Filter>
@@ -802,31 +802,28 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ElementManege.h">
-      <Filter>ElementManege</Filter>
-    </ClInclude>
-    <ClInclude Include="Field.h">
-      <Filter>Field</Filter>
+      <Filter>ElementManeger</Filter>
     </ClInclude>
     <ClInclude Include="VirtualElement.h">
-      <Filter>ElementManege</Filter>
+      <Filter>ElementManeger</Filter>
     </ClInclude>
-    <ClInclude Include="LandingInterface.h">
+    <ClInclude Include="Constant.h">
+      <Filter>Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
       <Filter>Field</Filter>
     </ClInclude>
     <ClInclude Include="Landing.h">
       <Filter>Field</Filter>
     </ClInclude>
-    <ClInclude Include="Constant.h">
+    <ClInclude Include="LandingInterface.h">
       <Filter>Field</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>Stdafx</Filter>
-    </ClInclude>
-    <ClInclude Include="Visualizer.h">
-      <Filter>Main</Filter>
     </ClInclude>
     <ClInclude Include="Robot.h">
       <Filter>Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualizer.h">
+      <Filter>Main</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
       <Filter>Ui</Filter>
@@ -834,20 +831,23 @@
     <ClInclude Include="Coordinate.h">
       <Filter>Ui</Filter>
     </ClInclude>
-    <ClInclude Include="SerialWriter.h">
-      <Filter>Serial</Filter>
+    <ClInclude Include="FloatingController.h">
+      <Filter>Ui</Filter>
     </ClInclude>
-    <ClInclude Include="SerialReader.h">
+    <ClInclude Include="SerialListView.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialWriter.h">
       <Filter>Serial</Filter>
     </ClInclude>
     <ClInclude Include="SerialManeger.h">
       <Filter>Serial</Filter>
     </ClInclude>
-    <ClInclude Include="SerialListView.h">
-      <Filter>Ui</Filter>
-    </ClInclude>
-    <ClInclude Include="FloatingController.h">
-      <Filter>Ui</Filter>
+    <ClInclude Include="SerialReader.h">
+      <Filter>Serial</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

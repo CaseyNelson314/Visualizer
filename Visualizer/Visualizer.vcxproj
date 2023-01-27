@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{e2fe5971-4674-4db9-ae0d-6b7ae0611440}</ProjectGuid>
+    <ProjectGuid>{9dbe995b-e9ec-4fa8-8152-37573286fbd0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Visualizer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -49,16 +49,16 @@
     <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\Debug\Intermediate\</IntDir>
     <TargetName>$(ProjectName)(debug)</TargetName>
     <LocalDebuggerWorkingDirectory>$(ProjectDir)App</LocalDebuggerWorkingDirectory>
-    <IncludePath>$(SIV3D_0_6_5)\include;$(SIV3D_0_6_5)\include\ThirdParty;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SIV3D_0_6_5)\lib\Windows;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SIV3D_0_6_6)\include;$(SIV3D_0_6_6)\include\ThirdParty;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SIV3D_0_6_6)\lib\Windows;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Intermediate\$(ProjectName)\Release\</OutDir>
     <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\Release\Intermediate\</IntDir>
     <LocalDebuggerWorkingDirectory>$(ProjectDir)App</LocalDebuggerWorkingDirectory>
-    <IncludePath>$(SIV3D_0_6_5)\include;$(SIV3D_0_6_5)\include\ThirdParty;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SIV3D_0_6_5)\lib\Windows;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SIV3D_0_6_6)\include;$(SIV3D_0_6_6)\include\ThirdParty;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SIV3D_0_6_6)\lib\Windows;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -322,17 +322,17 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="Constant.h" />
     <ClInclude Include="Coordinate.h" />
+    <ClInclude Include="ElementManege.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="FloatingController.h" />
     <ClInclude Include="Landing.h" />
     <ClInclude Include="LandingInterface.h" />
     <ClInclude Include="Robot.h" />
-    <ClInclude Include="SerialManeger.h" />
     <ClInclude Include="SerialListView.h" />
+    <ClInclude Include="SerialManeger.h" />
     <ClInclude Include="SerialReader.h" />
     <ClInclude Include="SerialWriter.h" />
-    <ClInclude Include="FloatingController.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="ElementManege.h" />
     <ClInclude Include="VirtualElement.h" />
     <ClInclude Include="Visualizer.h" />
   </ItemGroup>
