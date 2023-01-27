@@ -14,7 +14,7 @@
 
 Windows x64 のみ対応しています。
 
-[ダウンロード](https://github.com/CaseyNelson314/Visualizer/releases/download/v1.0.0/Visualizer.exe)
+[ダウンロード](https://github.com/CaseyNelson314/Visualizer/releases/download/v1.0.1/Visualizer.exe)
 
 git でのダウンロード
 
