@@ -154,5 +154,5 @@ MIT License
 |     |                                                       |
 | :-: | ----------------------------------------------------- |
 | OS  | Windows 11 Home                                       |
-| IDE | Microsoft Visual Studio Community 2022 Version 17.3.1 |
-| SDK | OpenSiv3D v0.6.5                                      |
+| IDE | Microsoft Visual Studio Community 2022 Version 17.4.4 |
+| SDK | OpenSiv3D v0.6.6                                      |
