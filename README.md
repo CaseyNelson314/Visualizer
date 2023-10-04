@@ -14,7 +14,18 @@
 
 ## 🐣 Download
 
+以下のリンクから実行ファイルをダウンロードできます。
+
 [Windows x64](https://github.com/CaseyNelson314/Visualizer/releases/download/v1.0.1/Visualizer.exe)
+
+> "Windows によって PC が保護されました" と表示される場合、続けて "詳細情報" をクリックすると実行できます。
+
+curl を使用できる方はこちら。
+
+```sh
+curl -OL https://github.com/CaseyNelson314/Visualizer/releases/download/v1.0.1/Visualizer.exe
+start .\Visualizer.exe
+```
 
 ## 💬 Usage
 
