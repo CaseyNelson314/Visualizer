@@ -4,9 +4,9 @@
 
 ## 🤔 Description
 
-ロボットに搭載されている左右の発射機構の操縦アプリです。
+ロボットに搭載されている紙飛行機の発射機構の操縦アプリです。
 
-2022 年度 四国地区、全国高専ロボコンで使用しました。
+2022 年度全国高専ロボコン 四国地区大会、 全国大会 で使用しました。
 
 ![image](https://user-images.githubusercontent.com/91818705/203841200-730035a2-636a-48d4-a17b-8a4aa23b5367.png)
 
@@ -64,7 +64,7 @@ flowchart LR
 	Master[Master/Teensy4.0] <--I2C--> MasterForwarding[Teensy4.0] <--UART--> MasterIM920[IM920]
 	end
 	subgraph 操縦者
-	MasterIM920 <-.920Mhz.-> ToPC[IM920] <--UART--> PCForwarding[Teensy4.0] <--UART--> PC
+	MasterIM920 <-.920MHz.-> ToPC[IM920] <--UART--> PCForwarding[Teensy4.0] <--UART--> PC
 	end
 ```
 
