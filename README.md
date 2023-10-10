@@ -1,6 +1,6 @@
 # Visualizer
 
-ロボットの発射機構操縦、現在位置表示アプリ
+![image](https://user-images.githubusercontent.com/91818705/203841200-730035a2-636a-48d4-a17b-8a4aa23b5367.png)
 
 ## 🤔 Description
 
@@ -8,9 +8,7 @@
 
 2022 年度全国高専ロボコン 四国地区大会、全国大会で使用しました。
 
-[ルール](https://official-robocon.com/robocon_wp/wordpress/wp-content/uploads/2022/04/kosen2022_rulebook.pdf)
-
-![image](https://user-images.githubusercontent.com/91818705/203841200-730035a2-636a-48d4-a17b-8a4aa23b5367.png)
+[全国高専ロボコン競技ルール](https://official-robocon.com/robocon_wp/wordpress/wp-content/uploads/2022/04/kosen2022_rulebook.pdf)
 
 ## 🐣 Download
 
